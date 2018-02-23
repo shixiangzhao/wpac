@@ -6,6 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>${message}
+<body>${message}<br />
+	<img alt="kindle" src="images/bg_ss00.png"
+		style="width: 200px; hight: 300px;" />
+	<br />
 </body>
 </html>
