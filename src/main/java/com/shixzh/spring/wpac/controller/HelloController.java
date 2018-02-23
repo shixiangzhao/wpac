@@ -10,6 +10,6 @@ public class HelloController {
 	@RequestMapping("/redis")
 	public ModelAndView hello() {
 		String message = "Hello, world.";
-		return new ModelAndView("hello.jsp", "message", message);
+		return new ModelAndView("WEB-INF/jsp/hello.jsp", "message", message);
 	}
 }
