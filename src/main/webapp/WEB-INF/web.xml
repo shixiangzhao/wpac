@@ -18,4 +18,14 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 		<servlet-name>dispatcher123</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
+
+	<!-- 使用部署描述符配置多个filter，根据filter定义的前后顺序，决定其执行顺序 -->
+	<filter>
+		<filter-name>DownloadCounterFilter</filter-name>
+		<filter-class>com.shixzh.spring.wpac.filter.DownloadCounterFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>DownloadCounterFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>

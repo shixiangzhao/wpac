@@ -14,10 +14,9 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-@WebFilter(filterName = "DownloadCounterFilter", urlPatterns = "/*" )
+//@WebFilter(filterName = "DownloadCounterFilter", urlPatterns = "/*" )
 public class DownloadCounterFilter implements Filter {
 
 	ExecutorService executorService = Executors.newSingleThreadExecutor();
